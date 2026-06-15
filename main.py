@@ -160,6 +160,37 @@ def addTwoNumbers(num1: int, num2: int):
 
 print(addTwoNumbers(5, 10)) #outputs 15
 
+#if statements
+a = 5
+b = 5
+if a > b:
+    print("a is greater than b")
+elif a == b:
+    print("a is equal to b")
+else:
+    print("b is greater than a")
+
+dev = True
+fullstack = False
+
+if dev and fullstack:
+    print("Welcome Risper, the fullstack developer!")
+elif dev or fullstack:
+    print("Welcome Risper, the developer!")
+
+#check for odd or even numbers
+number = int(input("Enter a number: "))
+if number%2 == 0:
+    print(f"{number} is an even number")
+else:    
+    print(f"{number} is an odd number")
+
+#multiples of 5
+number2 = int(input("Enter a seccond number: "))
+if number2%5 == 0:
+    print(f"{number2} is a multiple of 5")
+else:   
+    print(f"{number2} is not a multiple of 5")
 
 app = FastAPI()
 
