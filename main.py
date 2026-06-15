@@ -133,11 +133,32 @@ print(languages) #outputs ['Rust', 'TypeScript', 'JavaScript']
 languages.pop(1)
 print(languages) #outputs ['Rust', 'JavaScript']
 
-del languages[0]
-print(languages) #outputs ['JavaScript']
+# del languages[0]
+# print(languages) #outputs ['JavaScript']
 
-del languages
-print(languages) #outputs NameError: name 'languages' is not defined since it is removed entirely
+# del languages
+# print(languages) #outputs NameError: name 'languages' is not defined since it is removed entirely
+
+
+
+## functions
+def greetings():
+    print("Hello, welcome to my program!")
+
+greetings()
+
+
+def greetingsWithName(name:str):
+    print(f"Hello {name}, welcome to my program!")
+
+
+greetingsWithName("Risper")
+
+def addTwoNumbers(num1: int, num2: int):
+    return num1 + num2
+    print("This will not be printed since it is after the return statement")
+
+print(addTwoNumbers(5, 10)) #outputs 15
 
 
 app = FastAPI()
