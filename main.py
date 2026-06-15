@@ -68,6 +68,78 @@ print(bin(4)) #outputs 0b100
 print(sqrt(16)) #outputs 4.0
 
 
+#lists
+countries = ["Kenya", "Seychelles", "Tanzania", "South Africa", "Mauritius"]
+print(countries)
+#get ranges of items in a list
+print(countries[1:]) #outputs ['Seychelles', 'Tanzania', 'South Africa', 'Mauritius']
+print(countries[:3]) #outputs ['Kenya', 'Seychelles', 'Tanzania']
+print(countries[1:4]) #outputs ['Seychelles', 'Tanzania', 'South Africa']
+print(type(countries)) #outputs <class 'list'>
+
+#get the last item in a list
+print(countries[-1]) #outputs Mauritius
+print(len(countries)) #outputs 5
+
+# joining lists
+numbers = [1,2,3,5,5]
+languages = ["Python", "JavaScript", "TypeScript"]
+numbers.extend(languages) #outputs [1, 2, 3, 5, 5, 'Python', 'JavaScript', 'TypeScript']
+print(numbers)
+
+#add an item to the last position of a list
+languages.append("Rust")
+print(languages) #outputs ['Python', 'JavaScript', 'TypeScript', 'Rust']
+print(len(languages)) #outputs 4
+
+#add an item to a specific position in a list
+languages.insert(2, "Go")
+print(languages) #outputs ['Python', 'JavaScript', 'Go', 'TypeScript', 'Rust']
+
+#remove an item from a list
+languages.remove("Go")
+print(languages) #outputs ['Python', 'JavaScript', 'TypeScript', 'Rust']
+
+#clear a list
+# languages.clear()
+# print(languages) #outputs []
+
+#get the index of a particular item in a list
+print(languages.index("Rust"))
+
+#get the number of times an item appears in a list
+print(languages.count("Rust")) #outputs 1
+
+#arrange items in a list in ascending order
+numbers = [5, 3, 1, 4, 2]
+numbers.sort()
+print(numbers) #outputs [1, 2, 3, 4, 5]
+
+#reverse the order of items in a list
+numbers.reverse()
+print(numbers) #outputs [5, 4, 3, 2, 1]
+
+languages.reverse()
+print(languages) #outputs ['Rust', 'TypeScript', 'JavaScript', 'Python']
+
+#duplicate a list
+duplicateLanguages = languages.copy()
+print(duplicateLanguages) #outputs ['Rust', 'TypeScript', 'JavaScript', 'Python']
+
+#remove the last item in a list
+languages.pop()
+print(languages) #outputs ['Rust', 'TypeScript', 'JavaScript']
+
+languages.pop(1)
+print(languages) #outputs ['Rust', 'JavaScript']
+
+del languages[0]
+print(languages) #outputs ['JavaScript']
+
+del languages
+print(languages) #outputs NameError: name 'languages' is not defined since it is removed entirely
+
+
 app = FastAPI()
 
 
