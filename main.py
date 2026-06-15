@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from math import *
 
 # variables
 name = "Risper"
@@ -37,6 +38,34 @@ print(name.replace("r", "s")) #outputs Rispes
 
 
 
+#numbers in depth: functions
+number = 79
+print(number)
+#get remainnder of a division
+print(5%2) #outputs 1
+
+#convert numbers to strings
+stringifiedNumber = str(number)
+print("number is " + stringifiedNumber) #outputs number is 79 because you can only concatenate strings to strings
+
+#get absolute values
+print(abs(-5)) #outputs 5
+
+#get highest value between two numbers
+print(max(4, 3.9)) #outputs 4
+
+#get lowest value between two numbers
+print(min(4, 3.999)) #outputs 3.999
+
+#round numbers to the nearest integer
+print(round(3.5)) #outputs 4
+print(round(3.4)) #outputs 3
+
+#binary representation of a number
+print(bin(4)) #outputs 0b100
+
+#get math functions from importing the math module
+print(sqrt(16)) #outputs 4.0
 
 
 app = FastAPI()
