@@ -178,20 +178,32 @@ if dev and fullstack:
 elif dev or fullstack:
     print("Welcome Risper, the developer!")
 
-#check for odd or even numbers
-number = int(input("Enter a number: "))
-if number%2 == 0:
-    print(f"{number} is an even number")
-else:    
-    print(f"{number} is an odd number")
+# #check for odd or even numbers
+# number = int(input("Enter a number: "))
+# if number%2 == 0:
+#     print(f"{number} is an even number")
+# else:    
+#     print(f"{number} is an odd number")
 
-#multiples of 5
-number2 = int(input("Enter a seccond number: "))
-if number2%5 == 0:
-    print(f"{number2} is a multiple of 5")
-else:   
-    print(f"{number2} is not a multiple of 5")
+# #multiples of 5
+# number2 = int(input("Enter a seccond number: "))
+# if number2%5 == 0:
+#     print(f"{number2} is a multiple of 5")
+# else:   
+#     print(f"{number2} is not a multiple of 5")
 
+
+
+#dictionaries
+person =  {
+    'name': 'Risper',
+    'age': 28,
+    'country': 'Kenya',
+    'developer': 'fullstack'
+}
+
+print(person) #outputs {'name': 'Risper', 'age': 28, 'country': 'Kenya', 'developer': 'fullstack'}
+print(person['name'])
 app = FastAPI()
 
 
