@@ -204,6 +204,37 @@ person =  {
 
 print(person) #outputs {'name': 'Risper', 'age': 28, 'country': 'Kenya', 'developer': 'fullstack'}
 print(person['name'])
+
+
+# while loops
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+
+#for loops
+for letter in "Risper":
+    print(letter)
+    if letter == "p":
+        break
+
+for values in countries:
+    print(values)
+
+for values in person:
+    print(values)
+
+
+for x in range(6):
+    print(x)
+
+for x in range(2,8):
+    print(x)
+else:
+    print("Finally finished!")
+   
+    
 app = FastAPI()
 
 
