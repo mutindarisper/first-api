@@ -233,6 +233,20 @@ for x in range(2,8):
     print(x)
 else:
     print("Finally finished!")
+
+
+
+#classes
+class Person:
+    def __init__(self, name, age, country):
+        self.name = name
+        self.age = age
+        self.country = country
+        
+p1 = Person("Risper", 28, "Kenya")
+print(p1.name)
+print(p1.age)
+print(p1.country)
    
     
 app = FastAPI()
