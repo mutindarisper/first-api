@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from math import *
+from app import Student
 
 # variables
 name = "Risper"
@@ -247,6 +248,14 @@ p1 = Person("Risper", 28, "Kenya")
 print(p1.name)
 print(p1.age)
 print(p1.country)
+
+#inheritance
+class Person2(Student):
+    pass #to avoid errors
+
+p2 = Person2()
+
+print(f"{p2.name} is from {p2.country}")
    
     
 app = FastAPI()
