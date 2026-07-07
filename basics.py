@@ -255,3 +255,23 @@ class Person2(Student):
 p2 = Person2()
 
 print(f"{p2.name} is from {p2.country}")
+
+
+cash = 50
+item_price = 15
+tax = 0.03 * item_price
+total_price = item_price + tax
+balance = cash - total_price
+print(f"Your balance is {balance}")
+
+days = input("Enter number of days until your birthday: ")
+approximate_weeks = int(days) // 7
+print(f"Your birthday is in approximately {approximate_weeks} weeks.")
+
+
+zoo = ["lion", "tiger", "elephant", "giraffe", "zebra"]
+zoo.pop(3)
+zoo.append("monkey")
+zoo.pop(0)
+print(zoo) 
+print(zoo[:3])
